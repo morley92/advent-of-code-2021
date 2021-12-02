@@ -1,6 +1,6 @@
 import { readInputFile } from "../helper";
 
-function solution () {
+function solution() {
     const depths = readInputFile<number>('day1', '\n', (s) => Number(s))
 
     let numIncreases = 0
@@ -11,7 +11,7 @@ function solution () {
         }
     }
 
-    console.log(numIncreases)
+    return numIncreases
 }
 
-solution()
+console.log(solution())

@@ -1,6 +1,6 @@
 import { readInputFile } from "../helper";
 
-function solution () {
+function solution() {
     const depths = readInputFile<number>('day1', '\n', (s) => Number(s))
 
     const SLICE_SIZE = 3
@@ -19,11 +19,11 @@ function solution () {
         }
     }
 
-    console.log(numIncreases)
+    return numIncreases
 }
 
 function sumSlice(slice: number[]) {
-    return slice.reduce((a,b) => a + b, 0)
+    return slice.reduce((a, b) => a + b, 0)
 }
 
-solution()
+console.log(solution())
